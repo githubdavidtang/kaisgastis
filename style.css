@@ -1,0 +1,290 @@
+@charset "iso-8859-2";
+/*
+Theme Name: N2Clic Framework
+Theme URI: http://themes.n2clic.com/
+Author: N2Clic
+Author URI: http://n2clic.com/
+Description: Base framework for all the N2Clic themes developments
+Version: 1.0
+License: Private
+*/
+
+
+/* Table of Content
+==================================================
+	#Basic Styles
+	#Site Styles
+	#Typography
+	#Links
+	#Lists
+	#Images
+	#Buttons
+	#Tabs
+	#Forms
+	#Misc
+	#Wordpress */
+
+
+/* #Basic Styles
+================================================== */
+body {
+	background: #ffebd4 url(images/bg.png) repeat-y 50% 0;
+	font: 13px/1.231 "Georgia", "Times New Roman", Helvetica, Arial, sans-serif;
+	color: #444;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+ }
+
+
+/* #Typography
+================================================== */
+.widget-title,
+h1, h2, h3, h4, h5, h6 {
+	color: #362f21;
+	font-family: "Georgia", "Times New Roman", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-style: italic;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+h1 {
+	font-size: 46px;
+	line-height: 50px;
+	margin-bottom: 14px;
+}
+h2,h3 {
+	font-size: 30px;
+	line-height: 40px;
+	margin-bottom: 10px;
+}
+h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
+h5 { font-size: 17px; line-height: 24px; }
+h6 { font-size: 14px; line-height: 21px; }
+.subheader { color: #777; }
+
+table,
+p,
+li{font: 13px/1.231 "Georgia", "Times New Roman", Helvetica, Arial, sans-serif;}
+p { margin: 0 0 20px 0; }
+p img { margin: 0; }
+p.lead { font-size: 21px; line-height: 27px; color: #777;  }
+
+em { font-style: italic; }
+strong { font-weight: bold; }
+small { font-size: 80%; }
+	
+/* Special */
+abbr, accr{
+	border:1px dotted #ccc;
+}
+
+/*	Blockquotes  */
+blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
+blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+blockquote cite { display: block; font-size: 12px; color: #555; }
+blockquote cite:before { content: "\2014 \0020"; }
+blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+
+hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+
+
+/* #Links
+================================================== */
+a:hover, a:focus { color: #000; }
+p a, p a:visited { line-height: inherit; }
+	
+/* From Normalize.css */
+a { color: #00e; }
+a:visited { color: inherit; text-decoration: underline; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+
+
+/* #Lists
+================================================== */
+ul, ol { margin-bottom: 20px; }
+ul { list-style: none outside; }
+ol { list-style: decimal; }
+ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+ul.square { list-style: square outside; }
+ul.circle { list-style: circle outside; }
+ul.disc { list-style: disc outside; }
+ul ul, ul ol,
+ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
+ul ul li, ul ol li,
+ol ol li, ol ul li { margin-bottom: 6px; }
+li { line-height: 18px; margin-bottom: 12px; }
+ul.large li { line-height: 21px; }
+li p { line-height: 21px; }
+
+/* General */
+p{
+	line-height: 160%;
+}
+#main{
+	padding: 0 0 25px 0;
+}
+#intro img{
+	border: 1px solid #362f21;
+}
+#intro em{
+	display: block;
+	margin-top: 10px;
+	font-size: 12px;
+	color: #666;
+}
+#intro h2{
+	margin-bottom: 20px;
+}
+#intro h3{
+	border: 0;
+	font-size: 21px;
+	line-height: 30px;
+	margin: 15px 0 4px 0;
+}
+
+/* HelloBar */
+#hellobar{
+	text-align: center;
+	background: url(images/brown_noise.png);
+	color: #fff8f1;
+	padding: 15px 0;
+}
+#hellobar_border{
+	height: 8px;
+	width: 100%;
+	background: url(images/hellobar.png) repeat-x;
+	margin: 0 0 30px 0;
+}
+
+/* Header */
+header .part_left,
+header .part_right{
+	width: 50%;
+	float: left;
+}
+header .logo img{
+	display: block;
+	margin: 0 auto;
+}
+header #main_infos{
+	padding: 50px 0 0 0;
+}
+header #main_infos p{
+	margin: 10px 0 0 0;
+}
+header .map{
+	border: 1px solid #362f21;
+}
+header .phone{
+	height: 60px;
+	line-height: 60px;
+	background: url(images/phone.png) no-repeat;
+	padding: 0 0 0 100px;
+	margin: 30px 0 0 0;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+/* Working Hours */
+.working_hours td{
+	padding: 2px 20px 2px 0;
+}
+.working_hours td.even{
+	font-weight: bold;
+}
+
+/* Widgets */
+.widget-title{
+	font-size: 30px;
+	line-height: 40px;
+	margin-bottom: 10px;
+}
+.map{
+	display: block;
+	width: 251px;
+	height: 73px;
+	text-indent: -9999em;
+	background: url(images/map.png) no-repeat 0 0;
+	-webkit-transition: all 0.3s ease-out; 
+	-moz-transition: all 0.3s ease-out; 
+	-ms-transition: all 0.3s ease-out; 
+	-o-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
+.map:hover{
+	background-position: 0 -75px;
+}
+
+/* Ribbons */
+.ribbon{
+	width: 815px;
+	height: 79px;
+	margin: 50px auto;
+	background: url(images/ribbon.png) no-repeat;
+	color: #fff8f1;
+	font-family: "Georgia", "Times New Roman", Helvetica, Arial, sans-serif;
+}
+.ribbon .part_left,
+.ribbon .part_right{
+	width: 50%;
+	float: left;
+	padding: 20px 0 0 0;
+}
+.ribbon .part_left{
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	font-style: italic;
+}
+.ribbon .part_right strong{
+	display: block;
+}
+
+/* Carte */
+.carte h3{
+	border-bottom: 1px solid #362f21;
+}
+.carte ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.carte ul li{
+	position: relative;
+	margin: 25px 0;
+}
+.carte ul li.spicy{
+	background: url(images/spicy.png) no-repeat 85% 0;
+}
+.carte ul li .price{
+	font-weight: bold;
+	float: right;
+}
+.carte ul li strong{
+	display: block;
+}
+
+/* Footer */
+#footer_border{
+	height: 8px;
+	width: 100%;
+	background: url(images/footer.png) repeat-x;
+}
+footer{
+	background: url(images/brown_noise.png);
+	color: #fff8f1;
+	padding: 30px 0 80px 0;
+}
+footer p{
+	margin-top: 12px;
+}
+footer .map{
+	border: 1px solid #f5eee7;
+}
+footer .widget-title{
+	color: #fff;
+}
+footer .working_hours{
+	color: #fff;
+}
