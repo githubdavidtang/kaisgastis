@@ -18,11 +18,16 @@
 	<link rel="stylesheet" type="text/css" media="all" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="css/helper-classes.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="style.css" />
-	<link rel="stylesheet" type="text/css" media="all" href="//cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.33/example2/colorbox.min.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="plugins/colorbox/example2/colorbox.css" />
 	
 	<!-- The 1140px Grid - http://cssgrid.net/ -->
 	<!--[if lte IE 9]><link rel="stylesheet" href="css/1140.gs/ie.css" type="text/css" media="screen" /><![endif]-->
 	<link rel="stylesheet" href="css/1140.gs/1140.css" type="text/css" media="screen" />
+	
+	<!--[if lt IE 8]>
+		<link rel="stylesheet" type="text/css" href="style-ie7-and-down.css" />
+	<![endif]-->
+	<!-- end CSS-->
 
 	<!-- Favicons
 	================================================== -->
@@ -31,7 +36,8 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="/images/kg72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="/images/kg114.png">
 
-	<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script src="js/libs/modernizr-2.0.6.min.js"></script>
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
 	<script type="text/javascript">
 
 	  var _gaq = _gaq || [];
@@ -66,7 +72,8 @@
 						<div class="widget-title">Öppettider</div>
 						<table class="working_hours">
 							<tr>
-								<td class="even">Mån-Ons</td>
+								<td class="even">Stängt tills vidare</td>
+								<!-- <td class="even">Mån-Ons</td>
 								<td>11:30 - 15:00</td>
 							</tr>
 							<tr>
@@ -79,10 +86,10 @@
 							</tr>
 							<tr>
 								<td class="even">Sön & helger</td>
-								<td>13:00 - 20:00</td>
+								<td>13:00 - 20:00</td> -->
 							</tr>
 						</table>
-						<p>Stängt 15:00 - 17:00 på vardagar</p>
+						<!-- <p>Stängt 15:00 - 17:00 på vardagar</p> -->
 					</div>
 					<div class="part_right">
 						<div class="widget-title">Adress</div>
@@ -229,8 +236,8 @@
 		</div>
 	</footer>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.33/jquery.colorbox-min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="plugins/colorbox/colorbox/jquery.colorbox-min.js"></script>
 	<script>
 	jQuery(document).ready(function() {
 		
